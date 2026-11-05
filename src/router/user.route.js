@@ -14,5 +14,5 @@ router.post("/profile", (req, res)=>{
 router.post("/password", (req, res)=>{
     res.status(200).send("password post")
 })
-
+ 
 export default router
