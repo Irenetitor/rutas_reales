@@ -1,18 +1,17 @@
-import express from 'express'
+import express from "express";
 
- const router= express.Router()
+const router = express.Router();
 
-router.get("/profile", (req, res)=>{
-    res.status(200).send("ruta profile")
-})
+router.get("/profile", (req, res) => {
+  res.status(200).send("ruta profile");
+});
 
-router.post("/profile", (req, res)=>{
-    res.status(200).send("profile en post")
-})
+router.post("/profile", (req, res) => {
+  res.status(200).send("profile en post");
+});
 
+router.post("/password", (req, res) => {
+  res.status(200).send("password post");
+});
 
-router.post("/password", (req, res)=>{
-    res.status(200).send("password post")
-})
-
-export default router
+export default router;
