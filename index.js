@@ -8,15 +8,12 @@ const api=express();
 const port=process.env.PORT||3001;
 api.use(express.json());
 
-
 // API (de prueba)
 api.get("/",(req, res)=>{
     res.send("todo ok")
 })
 
-
 // RUTAS
-
 api.use("/user", userRouter)
 
 
